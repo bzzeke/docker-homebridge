@@ -1,0 +1,35 @@
+{
+    "bridge": {
+        "name": "Cambridge",
+        "username": "CC:22:3D:E3:CE:31",
+        "port": 51827,
+        "pin": "031-45-155"
+    },
+    "platforms": [
+        {
+        "platform": "Camera-ffmpeg-omx",
+            "cameras": [
+                {
+                    "name": "Street",
+                    "videoConfig": {
+                        "source": "-re -i rtsp://192.168.34.10:554/Streaming/Channels/1",
+                        "maxStreams": 2,
+                        "maxWidth": 1280,
+                        "maxHeight": 720,
+                        "maxFPS": 30
+                    }
+                },
+                {
+                    "name": "Backyard",
+                    "videoConfig": {
+                        "source": "-re -i rtsp://192.168.34.11:554/Streaming/Channels/1",
+                        "maxStreams": 2,
+                        "maxWidth": 1280,
+                        "maxHeight": 720,
+                        "maxFPS": 30
+                    }
+                }
+            ]
+        }
+    ]
+}
