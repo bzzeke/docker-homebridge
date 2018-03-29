@@ -1,5 +1,5 @@
 ARG arch=amd64
-FROM {$arch}/node:alpine
+FROM ${arch}/node:alpine
 
 WORKDIR /app
 VOLUME /app
