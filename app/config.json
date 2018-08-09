@@ -6,13 +6,18 @@
         "pin": "031-45-155"
     },
     "platforms": [
+    {
+      "platform": "Sesame",
+      "email": "zeke.home@gmail.com",
+      "password": "Gfhjkm"
+    },
         {
-        "platform": "Camera-ffmpeg-omx",
+        "platform": "Camera-ffmpeg",
             "cameras": [
                 {
                     "name": "Street",
                     "videoConfig": {
-                        "source": "-re -i rtsp://192.168.34.10:554/Streaming/Channels/1",
+                        "source": "-re -i rtsp://street.cam:554/Streaming/Channels/1",
                         "maxStreams": 2,
                         "maxWidth": 1280,
                         "maxHeight": 720,
@@ -22,7 +27,7 @@
                 {
                     "name": "Backyard",
                     "videoConfig": {
-                        "source": "-re -i rtsp://192.168.34.11:554/Streaming/Channels/1",
+                        "source": "-re -i rtsp://backyard.cam:554/Streaming/Channels/1",
                         "maxStreams": 2,
                         "maxWidth": 1280,
                         "maxHeight": 720,
